@@ -36,7 +36,7 @@ public class WebConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-       configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000",  "https://project-management-btgq1ypys-janvis-projects-accd4478.vercel.app","https://project-management-orcin-zeta.vercel.app"));
+       configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000", "https://project-management-peach.vercel.app"));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.addAllowedHeader("*");
         configuration.setAllowCredentials(true);
