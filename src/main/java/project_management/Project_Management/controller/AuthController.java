@@ -25,6 +25,7 @@ import java.util.Collection;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "https://project-management-5kajrpllz-janvis-projects-accd4478.vercel.app")
 @RequestMapping("/auth")
 public class AuthController {
 
