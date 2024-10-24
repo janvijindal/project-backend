@@ -16,7 +16,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /Project_Management
 
 # Adjust the path to the JAR file based on your structure
-COPY --from=build Project_Management/target/Project_Management-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /Project_Management/target/Project_Management-0.0.1-SNAPSHOT.jar app.jar
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
